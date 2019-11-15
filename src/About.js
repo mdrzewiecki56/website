@@ -8,9 +8,26 @@ class About extends Component {
     render(){
         return (
             <div className="App-about mt-5">
-                <div className="row mx-auto">
-                    <img src={dog} alt="about" className="col-lg-5 col-sm-12 col-centered"/>
-                    <div className="col-lg-5 col-sm-12 col-centered">Lorem impsum</div>
+                <div className="row mx-auto mb-5">
+                    <img src={dog} alt="about" className="col-lg-6 col-sm-12 col-centered"/>
+                    <div className="col-lg-5 offset-lg-1 col-sm-12 col-centered">
+                        <h3>Heading 1</h3>
+                        <p>Lorem impsumLorem impsumLorem impsumLorem impsumLorem impsumLorem impsumLorem impsumLorem impsum</p>
+                    </div>
+                </div>
+                <div className="row mx-auto mb-5">
+                    <img src={dog} alt="about" className="col-lg-6 col-sm-12 col-centered"/>
+                    <div className="col-lg-5 offset-lg-1 col-sm-12 col-centered">
+                        <h3>Heading 2</h3>
+                        <p>Lorem impsumLorem impsumLorem impsumLorem impsumLorem impsumLorem impsumLorem impsumLorem impsum</p>
+                    </div>
+                </div>
+                <div className="row mx-auto mb-5">
+                    <img src={dog} alt="about" className="col-lg-6 col-sm-12 col-centered"/>
+                    <div className="col-lg-5 offset-lg-1 col-sm-12 col-centered">
+                        <h3>Heading 3</h3>
+                        <p>Lorem impsumLorem impsumLorem impsumLorem impsumLorem impsumLorem impsumLorem impsumLorem impsum</p>
+                    </div>
                 </div>
             </div>
         );
