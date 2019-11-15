@@ -18,6 +18,7 @@ class App extends Component{
         <Navbar sites={this.props.sites} />
         <div className="container">
           <Switch>
+              <Route exact path="/" render={() => <About />} />
               <Route exact path="/about" render={() => <About />} />
               <Route exact path="/option2"/>
               <Route exact path="/option3"/>

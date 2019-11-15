@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import './About.scss';
 import dog from './img/dog1.jpg';
 
-console.log(dog);
-
 class About extends Component {
     render(){
         return (
