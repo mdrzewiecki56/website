@@ -17,13 +17,13 @@ class App extends Component{
         <Header />
         <Navbar sites={this.props.sites} />
         <div className="container-fluid">
-          <Switch>
-              <Route exact path={`${process.env.PUBLIC_URL}/about`} render={() => <About />} />
-              <Route exact path={`${process.env.PUBLIC_URL}/option1`} />
-              <Route exact path={`${process.env.PUBLIC_URL}/option2`} />
-              <Route exact path={`${process.env.PUBLIC_URL}/option3`} />
-              <Redirect to={`${process.env.PUBLIC_URL}/about`}/>
-          </Switch>
+            <Switch>
+              <Route exact path="/about" render={() => <About />} />
+              <Route exact path="/option2"/>
+              <Route exact path="/option3"/>
+              <Route exact path="/option4"/>
+              <Redirect to="/about" />
+            </Switch>
         </div>
       </div>
     );

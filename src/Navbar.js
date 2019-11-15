@@ -8,7 +8,7 @@ class Navbar extends Component {
     render(){
         const links = this.props.sites.map(link => {
             let id = uuid();
-            return <li className="nav-item" key={id}><NavLink to={process.env.PUBLIC_URL + link.toLowerCase().replace(/\s/g, '')} className="item">{link}</NavLink></li>})
+            return <li className="nav-item" key={id}><NavLink to={link.toLowerCase().replace(/\s/g, '')} className="item">{link}</NavLink></li>})
         
         return (
             <nav className="App-navbar navbar navbar-expand-lg navbar-light bg-light">
