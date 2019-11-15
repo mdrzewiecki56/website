@@ -16,14 +16,13 @@ class App extends Component{
       <div className="App">
         <Header />
         <Navbar sites={this.props.sites} />
-        <div className="container">
+        <div className="container-fluid">
           <Switch>
-              <Route exact path="/" render={() => <About />} />
-              <Route exact path="/about" render={() => <About />} />
-              <Route exact path="/option2"/>
-              <Route exact path="/option3"/>
-              <Route exact path="/option4"/>
-              <Redirect to="/about" />
+              <Route exact path="/website/about" render={() => <About />} />
+              <Route exact path="/website/option2"/>
+              <Route exact path="/website/option3"/>
+              <Route exact path="/website/option4"/>
+              <Redirect to="/website/about" />
           </Switch>
         </div>
       </div>
