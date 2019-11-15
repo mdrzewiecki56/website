@@ -18,12 +18,11 @@ class App extends Component{
         <Navbar sites={this.props.sites} />
         <div className="container-fluid">
           <Switch>
-              <Route exact path="/website" render={() => <About />} />
-              <Route exact path="/website/about" render={() => <About />} />
-              <Route exact path="/website/option2"/>
-              <Route exact path="/website/option3"/>
-              <Route exact path="/website/option4"/>
-              <Redirect to="/website" />
+              <Route exact path={`${process.env.PUBLIC_URL}/about`} render={() => <About />} />
+              <Route exact path={`${process.env.PUBLIC_URL}/option1`} />
+              <Route exact path={`${process.env.PUBLIC_URL}/option2`} />
+              <Route exact path={`${process.env.PUBLIC_URL}/option3`} />
+              <Redirect to={`${process.env.PUBLIC_URL}/about`}/>
           </Switch>
         </div>
       </div>
