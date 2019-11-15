@@ -1,0 +1,26 @@
+.App-navbar { 
+
+    .nav-item {
+        min-width: 150px;
+        display: block;
+        padding: 20px;
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+    }
+    .nav-item:hover{
+        cursor: pointer;
+    }
+
+    a:hover{
+        cursor: pointer;
+    }
+
+    a.active{
+        color: #000;
+        text-decoration: underline;
+    }
+
+}
