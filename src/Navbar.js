@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 import uuid from 'uuid/v4';
 
 class Navbar extends Component {
-    
+
     render(){
         const links = this.props.sites.map(link => {
             let id = uuid();
