@@ -3,7 +3,9 @@ import axios from 'axios';
 import uuid from 'uuid/v4';
 import {Link} from 'react-router-dom';
 import Image from './Image';
-import Loader from './Loader';
+import Loader from 'react-loader-spinner'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import './Gallery.scss';
 
 class Gallery extends Component {
     constructor(props){
@@ -29,12 +31,29 @@ class Gallery extends Component {
         this.setState({images: imgs}, () => this.setState({isLoading: false}));
     }
 
-    render(){    
+    render(){
+        let imgs = [];
+        let img_index = 0;
+        for (let i=0;i<this.state.images.length/3;i++) {
+                imgs.push([]);
+            for (let j=0;j<3;j++){
+                let id = uuid();
+                if (j===1){
+                    imgs[i].push(<div key={id} className="col-lg-6 col-sm-12 col-centered"><Link to={`/img${id}`}><Image src={this.state.images[img_index].url} id={id}/></Link></div>);
+                    img_index++;
+                }
+                else{
+                    imgs[i].push(<div key={id} className="col-lg-3 col-sm-12 col-centered"><Link to={`/img${id}`}><Image src={this.state.images[img_index].url} id={id}/></Link></div>);
+                    img_index++;
+                }   
+                    
+            }
+        }
         return (
-            <div className="Gallery">
-                {this.state.isLoading ? <Loader/> : 
-                this.state.images.map( el => <Link to={`/img${el.id}`} key={el.id}><Image src={el.url} id={el.id}/></Link>)}
-                <button onClick={this.getImages}>Get More!</button>
+            <div className="Gallery pt-5">
+                {this.state.isLoading ? <div className="col-lg-12 col-centered"><Loader type="Puff" color="#00BFFF" height={250} width={250}/></div> : 
+                imgs.map(el => {let id = uuid(); return <div key={id} className="row">{el}</div>})}
+                {!this.state.isLoading && <button onClick={this.getImages}>Get More!</button>}
             </div>
 
         );
