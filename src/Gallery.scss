@@ -1,5 +1,23 @@
 .app-img{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    max-height: 200px;
+    object-fit: cover;
+    padding: 5px 5px 5px 5px;
+}
+
+a{
+    all: unset;
+    display: block;
+}
+
+.load{
+    all: unset;
+    text-align: center;
+    background-color: #09ad8e;
+    color: #fff;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 350;
 }
