@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import uuid from 'uuid/v4';
-import {Link} from 'react-router-dom';
 import Image from './Image';
-import Loader from 'react-loader-spinner'
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 import './Gallery.scss';
+import { Default, DualRing } from 'react-awesome-spinners'
 
 class Gallery extends Component {
     constructor(props){
@@ -73,10 +71,10 @@ class Gallery extends Component {
             }
         }
         return (
-            <div className="Gallery pt-5">
-                {this.state.isLoading ? <div className="col-lg-12 col-centered"><Loader type="Puff" color="#00BFFF" height={250} width={250}/></div> : 
-                imgs.map(el => {let id = uuid(); return <div key={id} className="row">{el}</div>})}
-                {!this.state.isLoading && <div className="row mt-3 mb-3"><div className="col-lg-4 col-md-3 col-sm-2"></div><button onClick={this.getImages} className="col-lg-4 col-md-6 col-sm-8 load">Get More</button><div className="col-lg-4 col-md-3 col-sm-2"></div></div>}
+            <div className="Gallery pt-5 fadeIn">
+                {this.state.isLoading ? <div className="col-lg-12 col-centered loader"><DualRing size={15} sizeUnit={'vh'}/></div> : 
+                imgs.map(el => {let id = uuid(); return <div key={id} className="row fadeIn">{el}</div>})}
+                {!this.state.isLoading && <div className="row mt-3 mb-3 fadeIn"><div className="col-lg-4 col-md-3 col-sm-2 fadeIn"></div><button onClick={this.getImages} className="col-lg-4 col-md-6 col-sm-8 load fadeIn">Get More</button><div className="col-lg-4 col-md-3 col-sm-2 fadeIn"></div></div>}
             </div>
 
         );

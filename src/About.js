@@ -5,7 +5,7 @@ import dog from './img/dog1.jpg';
 class About extends Component {
     render(){
         return (
-            <div className="App-about mt-5">
+            <div className="App-about mt-5 fadeIn">
                 <div className="row mx-auto mb-5">
                     <div className="col-lg-6 col-sm-12 col-centered "><img src={dog} alt="about" className="img-fluid" /></div> 
                     <div className="col-lg-5 offset-lg-1 col-sm-12 col-centered pt-2">
