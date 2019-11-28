@@ -10,7 +10,6 @@ a{
 }
 
 .load{
-    all: unset;
     text-align: center;
     background-color: #09ad8e;
     color: #fff;
@@ -20,6 +19,8 @@ a{
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 350;
+    max-width: 100%;
+    padding: 0px 0px !important;
 }
 
 .loader{

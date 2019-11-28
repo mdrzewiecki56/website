@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import About from './About';
 import Gallery from './Gallery';
 import {Route, Switch, Redirect} from 'react-router-dom';
+import 'normalize.css';
 
 class App extends Component{
   static defaultProps = {

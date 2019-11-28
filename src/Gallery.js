@@ -3,7 +3,7 @@ import axios from 'axios';
 import uuid from 'uuid/v4';
 import Image from './Image';
 import './Gallery.scss';
-import { Default, DualRing } from 'react-awesome-spinners'
+import { DualRing } from 'react-awesome-spinners'
 
 class Gallery extends Component {
     constructor(props){
@@ -71,7 +71,7 @@ class Gallery extends Component {
             }
         }
         return (
-            <div className="Gallery pt-5 fadeIn">
+            <div className="Gallery pt-3 fadeIn">
                 {this.state.isLoading ? <div className="col-lg-12 col-centered loader"><DualRing size={15} sizeUnit={'vh'}/></div> : 
                 imgs.map(el => {let id = uuid(); return <div key={id} className="row fadeIn">{el}</div>})}
                 {!this.state.isLoading && <div className="row mt-3 mb-3 fadeIn"><button onClick={this.getImages} className="load col-lg-6 offset-lg-3 col-sm-10 offset-sm-1">Get More</button></div>}
