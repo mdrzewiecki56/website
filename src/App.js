@@ -6,10 +6,11 @@ import About from './About';
 import Gallery from './Gallery';
 import {Route, Switch, Redirect} from 'react-router-dom';
 import 'normalize.css';
+import ToDoList from './ToDoList';
 
 class App extends Component{
   static defaultProps = {
-    sites: [ "About","Gallery", "Option 3", "Option 4" ]
+    sites: [ "About","Gallery", "TodoList", "Option 4" ]
   };
 
   render(){
@@ -21,7 +22,7 @@ class App extends Component{
             <Switch>
               <Route exact path="/about" render={() => <About />} />
               <Route exact path="/gallery" render={() => <Gallery perPage={9}/>}/>
-              <Route exact path="/option3"/>
+              <Route exact path="/TodoList" render={() => <ToDoList/>}/>
               <Route exact path="/option4"/>
               <Route component={() => (<div>404 Not found <Redirect to="/about" /></div>)} />
               
