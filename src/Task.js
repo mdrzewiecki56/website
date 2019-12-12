@@ -27,7 +27,7 @@ export default class Task extends Component{
     }
     render(){
         let content = this.state.editing ? 
-        <form onSubmit={this.handleEdit}>
+        <form onSubmit={this.handleEdit} className="taskForm">
             <input value={this.state.taskText} onChange={this.handleChange} name="editTask"></input>
             <button>Submit!</button>
         </form> 
