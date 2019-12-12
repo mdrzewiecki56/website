@@ -13,7 +13,7 @@ class About extends Component {
                         <p>Work in progress</p>
                         <p>Made with ReactJS, routed with react-router, styled with SCSS</p>
                         <p>Gallery - bootstrap, react-awesome-spinners, axios</p>
-                        <p>ToDo List - css flexbox</p>
+                        <p>ToDo List - css flexbox, media queries</p>
                     </div>
                 </div>
             </div>
