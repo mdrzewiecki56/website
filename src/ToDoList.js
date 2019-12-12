@@ -56,7 +56,7 @@ export default class ToDoList extends Component {
         }
 
         return (
-            <div className="ToDoList fadeIn">
+            <div className="ToDoList fadeIn mt-5">
                 <div className="list-container">
                     <div className="list-tasks">
                         <div className="list-header">
