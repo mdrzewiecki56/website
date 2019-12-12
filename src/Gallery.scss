@@ -4,6 +4,11 @@
     padding: 5px 5px 5px 5px;
 }
 
+.container-fluid{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 a{
     all: unset;
     display: block;
@@ -18,12 +23,16 @@ a{
     line-height: 60px;
     border-radius: 5px;
     text-transform: uppercase;
-    font-weight: 350;
+    font-weight: 475;
+    letter-spacing: 1px;
     max-width: 100%;
     padding: 0px 0px !important;
     outline: none;
+    border: none;
 }
-
+.epCqVG:after{
+    border-color:#09ad8e transparent #09ad8e transparent !important;
+}
 .loader{
     height: auto;
     margin: 0 auto;
