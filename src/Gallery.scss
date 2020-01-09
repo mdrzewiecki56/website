@@ -46,3 +46,24 @@ a{
 .epCqVG:after{
     margin: 25% auto !important;
 }
+.Gallery{
+    position: relative;
+    z-index: 0;
+    .overlay{
+    height: 80vh;
+    width:100%;
+    position: absolute;
+    background: #f8f9fa;
+    z-index: 300;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+        img{
+            height: 80%;
+            width: auto;
+        }
+    }
+    .overlay:hover{
+        cursor: pointer;
+    }
+}
