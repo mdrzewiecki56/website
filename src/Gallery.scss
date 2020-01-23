@@ -1,3 +1,5 @@
+@import "./App.scss";
+
 .app-img{
     max-height: 200px;
     object-fit: cover;
@@ -11,7 +13,7 @@ a{
 
 .load{
     text-align: center;
-    background-color: #09ad8e;
+    background-color: $primary;
     color: #fff;
     font-size: 20px;
     height: 60px;
@@ -26,7 +28,7 @@ a{
     border: none;
 }
 .epCqVG:after{
-    border-color:#09ad8e transparent #09ad8e transparent !important;
+    border-color:$primary transparent $primary transparent !important;
 }
 .loader{
     height: auto;

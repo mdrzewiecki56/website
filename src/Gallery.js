@@ -16,7 +16,7 @@ class Gallery extends Component {
     async componentDidMount(){
         this.getImages();   
     }
-
+    
     async getImages(){
         this.setState({isLoading: true});
         let imgs = [];
