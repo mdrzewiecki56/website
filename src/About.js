@@ -13,7 +13,7 @@ class About extends Component {
                         <p>Made with ReactJS, routed with react-router, styled with SCSS</p>
                         <p>Gallery - bootstrap, react-awesome-spinners, axios</p>
                         <p>ToDo List - css flexbox, media queries</p>
-                        <p>If you fancy checking out an actual website being made with ReactJS, I have just started a new <a href="https://project-ebbcd.firebaseapp.com/" style={{display: "inline", cursor: "pointer"}}>project</a>.</p>
+                        <p>If you fancy checking out an actual website being made with ReactJS, I have just started a new <a href="https://project-ebbcd.firebaseapp.com/" style={{display: "inline", cursor: "pointer", color: "#09ad8e"}}>project</a>.</p>
                     </div>
                 </div>
             </div>
