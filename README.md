@@ -1,7 +1,7 @@
 # Webiste
 https://mdrzewiecki56.github.io/website
 
-Some generic webiste contains:
+My personal react playground, so far contains:
 - Some generic layout 'about' page (not started)
 - gallery (needs some styling fixes)
 - to-do list (so far styling looks ok)

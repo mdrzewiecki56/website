@@ -9,11 +9,11 @@ class About extends Component {
                 <div className="row mx-auto mb-5">
                     <div className="col-lg-6 col-sm-12 col-centered "><img src={dog} alt="about" className="img-fluid" /></div> 
                     <div className="col-lg-5 offset-lg-1 col-sm-12 col-centered pt-2">
-                        <h3 className="mb-4">Page under development</h3>
-                        <p>Work in progress</p>
+                        <h3 className="mb-4">Welcome to my ReactJS playground</h3>
                         <p>Made with ReactJS, routed with react-router, styled with SCSS</p>
                         <p>Gallery - bootstrap, react-awesome-spinners, axios</p>
                         <p>ToDo List - css flexbox, media queries</p>
+                        <p>If you fancy checking out an actual website being made with ReactJS, I have just started a new <a href="https://project-ebbcd.firebaseapp.com/" style={{display: "inline", cursor: "pointer"}}>project</a>.</p>
                     </div>
                 </div>
             </div>

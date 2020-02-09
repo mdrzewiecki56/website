@@ -20,11 +20,11 @@ class App extends Component{
         <Navbar sites={this.props.sites} />
         <div className="container-fluid">
             <Switch>
-              <Route exact path="/about" render={() => <About />} />
+              <Route exact path="/" render={() => <About />} />
               <Route exact path="/gallery" render={() => <Gallery perPage={9}/>}/>
               <Route exact path="/TodoList" render={() => <ToDoList/>}/>
               <Route exact path="/option4"/>
-              <Route component={() => (<div>404 Not found <Redirect to="/about" /></div>)} />
+              <Route component={() => (<div>404 Not found <Redirect to="/" /></div>)} />
               
             </Switch>
         </div>
